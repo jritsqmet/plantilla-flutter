@@ -22,6 +22,7 @@ Widget formularioRegistro(){
       Column(
         mainAxisSize: MainAxisSize.min,
         children: [
+        Text("Registro", style: TextStyle(fontSize: 40),),
         TextField(controller: _correo, decoration: InputDecoration( border: OutlineInputBorder(), label: Text("Correo"), )),
         Container(height: 10,),
         TextField(controller: _contrasenia, decoration: InputDecoration( border: OutlineInputBorder(), label: Text("Contraseña"), )),

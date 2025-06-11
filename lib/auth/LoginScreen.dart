@@ -23,11 +23,12 @@ Widget formularioLogin(){
       Column(
         mainAxisSize: MainAxisSize.min,
         children: [
+        Text("LOGIN", style: TextStyle(fontSize: 40),),
         TextField(controller: _correo,  decoration: InputDecoration( border: OutlineInputBorder(), label: Text("Correo"), ),),
         Container(height: 10,),
         TextField(controller: _contrasenia, decoration: InputDecoration( border: OutlineInputBorder(), label: Text("Contrasenia"), )),
     
-        ElevatedButton(onPressed: ()=> registrarse(), child: Text("Login"))
+        ElevatedButton(onPressed: ()=> login(), child: Text("Login"))
       ],)
     
     ),
@@ -35,6 +36,6 @@ Widget formularioLogin(){
 
 }
 
-void registrarse(){
+void login(){
   
 }
